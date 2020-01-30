@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--NAVIGATION AND MY NAME-->
+    <header>
+       <!--
+        <img class="Logo" src="img/Asset 1.png">-->
+        <p class="logo">Brandon <span class="Grimm">Grimm</span></p>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>  
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!--CONTENT-->
+    <section>
+    <div class="side"></div>
+        <img class="mySlides" src="img/TOP1.png" style= "width:100%">
+    
+    </div>
+    </section>
+
+    <section>
+        <div class="mid">
+        <h1 id class="About">About Me</h1>
+        <p>
+            My name is Brandon, as you have probably identified by now.<br>
+            And I am a first-year student at The University of Applied Sciences studying User  Experience Design.<br>
+            I am currently searching for an internship position. I focus on UX research, understanding the user, the thought process behind the ideation phases. 
+            I want to delph deeper into the development scene, so I am very interested in learning more coding languages. 
+            I was born and raised in a beautiful, diverse country called Namibia, and this has shaped me into a culturally aware person. 
+            I always shared a passion for helping people and trying to explain things in a manner that everyone can understand. I find it extremely exciting trying 
+            to understand how people interact with different products 
+        </p>
+        </div>
+    </section>
+    <section>
+        <img class="mySlides" src="img_band_la.jpg"
+        style="width:100%">
+        <img class="mySlides" src="img_band_ny.jpg"
+        style="width:100%">
+        <img class="mySlides" src="img_band_chicago.jpg"
+        style="width:100%">
+      </section>
+
+
+      <script>
+          window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+
+
+            var sticky = navbar.offsetTop;
+
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+            }
+      </script>
+</body>
+</html>
