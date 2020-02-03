@@ -8,7 +8,7 @@
 }
 .Grimm{
     color: #65C8D0;
-    font-family: "satisfy";
+    font-family: "Satisfy";
 }
 .mid{
     text-align: justify;
@@ -187,9 +187,7 @@ button:hover{
   .sticky + .content {
     padding-top: 60px;
   }
-  * {
-    font-family: "Prompt";
-  }
+ 
   
   .footer-distributed{
       background: #444;
