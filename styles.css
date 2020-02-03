@@ -11,15 +11,22 @@
 }
 .mid{
     text-align: justify;
-    padding: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 .text{
-    text-align: center;
-    text-justify: inter-word;
-    font-size: 35px;
+    font-family: "prompt";
+    top: 50%;
+    right: 80%;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+
 }
 .About{
     color: black;
+
     text-align: center;
     font-size: 68px;
     padding: 20px;
@@ -28,16 +35,19 @@
 }
 
 p{
-    text-align: block;
+    font-size: 18px;
+    text-align: justify;
+    top: 50%;
+    right:80%;
 
 }
 
 
 /*
-.mySlides{
-    background-color: black;
-}
+.MySlide{ 
 
+}
+/*
 .side{
         -ms-flex: 70%; /* IE10
         flex: 30%;
@@ -93,7 +103,7 @@ p{
 li,a,button{
     font-family: "prompt", sans-serif;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 20px;
     color: black;
     text-decoration: none;
 }
@@ -112,7 +122,7 @@ header{
   }
 
 .logo{
-    font-size: 35px;
+    font-size: 45px;
     font-family: "Satisfy", sans-serif;
     order: 3;
     margin-left: auto;

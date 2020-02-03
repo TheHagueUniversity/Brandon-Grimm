@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects</title>
+    <link rel="icon" href="img/1x/Asset 1.png">
+    <link rel="stylesheet" href="trywork.css">
+</head>
+<body>
+    <!--NAVIGATION AND MY NAME-->
+    <header>
+       <!--
+        <img class="Logo" src="img/Asset 1.png">-->
+        <p class="logo">Brandon <span class="Grimm">Grimm</span></p>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>  
+                <li><a href="#">About</a></li>
+                <li><a href="work.html">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <section>
+                <div class="wrapper">
+                    <div class="media">
+                    <div class="layer">
+                        <a href="#">F1 2014</a>
+                      </div>
+                    <img src="https://images.unsplash.com/photo-1431818563807-927945852ab6?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=" alt="" />
+                    </div>
+                     <div class="media">
+                    <div class="layer">
+                        <a href="#">Hallmark</a>
+                      </div>
+                    <img src="https://images.unsplash.com/photo-1443397646383-16272048780e?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=" alt="" />
+                    </div>
+                       <div class="media">
+                    <div class="layer">
+                        <a href="#">Processing</a>
+                      </div>
+                    <img src="https://images.unsplash.com/photo-1442965416224-f6a7eca980fa?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=" alt="" />
+                    </div>
+                    </div>
+               </section>
+               </main>
+            </body>
+        </html>
+
+
+        /*
+        <div class="container"></div>
+<div class="box">
+   <div class="icon"></div>
+</div>
+<div class="box">
+</div>
+<div class="box">
+</div>
+</div>
+
+
+
+
+</main>
+                
+<div class="wrapper">
+    <div class="media">
+    <div class="layer">
+        <a href="#">F1 2014</a>
+      </div>
+    <img src="https://images.unsplash.com/photo-1431818563807-927945852ab6?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=" alt="" />
+    </div>
+
+     <div class="media">
+    <div class="layer">
+        <a href="#">Hallmark</a>
+      </div>
+    <img src="https://images.unsplash.com/photo-1443397646383-16272048780e?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=" alt="" />
+    </div>
+
+       <div class="media">
+    <div class="layer">
+        <a href="#">Processing</a>
+      </div>
+    <img src="https://images.unsplash.com/photo-1442965416224-f6a7eca980fa?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=" alt="" />
+    </div>
+    </div>
+
+    <div class="media">
+        <div class="layer">
+            <a href="#">9292</a>
+          </div>
+        <img src="https://images.unsplash.com/photo-1442965416224-f6a7eca980fa?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=" alt="" />
+        </div>
+        </div>
+
+        <div class="media">
+            <div class="layer">
+                <a href="#"></a>
+              </div>
+            <img src="https://images.unsplash.com/photo-1442965416224-f6a7eca980fa?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=" alt="" />
+            </div>
+            </div>

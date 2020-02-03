@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Prompt:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.Grimm{
+    color: #65C8D0;
+}
+
+.content{
+    padding: 16px;
+}
+
+li,a,button{
+    font-family: "prompt", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    /* push text to far edges*/
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    
+}
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+.logo{
+    font-size: 35px;
+    font-family: "Satisfy", sans-serif;
+    order: 3;
+    margin-left: auto;
+}
+
+nav{
+    order:1;
+}
+.navbar{
+    list-style: none;
+}
+
+.navbar li a.active {
+    color:rgb(101, 200, 208) ;
+  }
+
+.navbar li{
+    display: inline-block;
+    padding: 0px  20px;
+}
+
+.navbar li:nth-child(1){
+    display: inline-block;
+    padding: 0px  20px 0 0;
+}
+
+.navbar li a{
+    transition: all 0.3 ease 0s;
+}
+.navbar li a:hover{
+    color: rgb(151, 200, 208);
+}
+
+.cta{
+    order: 2;
+}
+
+button{
+    /*
+    margin-left: 15px;
+    padding: 10px 25px ;
+    background-color: rgba(101,200,208,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    */
+    transition: all 0.3 ease 0s;
+}
+
+button:hover{
+    background-color: rgba(101,200,208,0.7);
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Prompt";
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+}
+.container .box {
+    position: relative;
+    width:350px;
+    padding:40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 4px;
+    
+}
