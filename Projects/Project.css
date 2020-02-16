@@ -35,18 +35,17 @@ p{
 
 }
 
+.pro1{
+    text-align: center;
+    color: white;
+}
+
+.sides{
+margin-top: 0em;
+}
+
 
 /*
-.MySlide{ 
-
-}
-/*
-.side{
-        -ms-flex: 70%; /* IE10
-        flex: 30%;
-        background-color: black;
-        padding: 20px;
-}
 .first{
     background-color: black;
     color: white;
@@ -171,14 +170,17 @@ button:hover{
 }
 
 .Slide{
-    position: absolute;
-    left: 40%;
+    position: relative;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
-
+.ul{
+    float: left;
+}
   
   .footer-distributed{
-      background: #444;
+      background: black;
       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
       box-sizing: border-box;
       width: 100%;
@@ -186,6 +188,7 @@ button:hover{
       text-align: left;
       padding: 50px 60px 40px;
       overflow: hidden;
+      margin-top: 3rem;
   }
   
   section {
@@ -252,7 +255,7 @@ button:hover{
       width: 35px;
       height: 35px;
       cursor: pointer;
-      background-color:  #33383b;
+      background-color: black;
       border-radius: 2px;
   
       font-size: 20px;
@@ -327,7 +330,7 @@ button:hover{
   }
   
   .footer-distributed form button{
-      border-radius: 3px;
+      border-radius: 20px;
       background-color:  #33383b;
       color: #ffffff;
       border: 0;
