@@ -330,8 +330,8 @@ button:hover{
   }
   
   .footer-distributed form button{
-      border-radius: 20px;
-      background-color:  #33383b;
+      border-radius: 16px;
+      background-color:  #65C8D0;
       color: #ffffff;
       border: 0;
       padding: 15px 50px;

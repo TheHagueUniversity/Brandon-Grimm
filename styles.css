@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt:500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
-html{
-    height: 100%;
-}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +9,7 @@ html{
     
 
 }
-.Grimm1{
+.Grimm{
     color: #65C8D0;
     font-family: "Satisfy";
 
@@ -19,24 +17,25 @@ html{
 .Grimm1{
     color: #65C8D0;
     font-family: "Satisfy";
-    float:left;
-    position: relative;
+    
+    position: static;
 }
 .Grimm__2{
     color: grey;
-    float: left;
-    position: relative;
+    
+    position: static;
 }
 .Grimm__3{
     color: grey;
-    float: right;
-    position: relative;
+    
+    position: static;
+    margin-bottom: auto;
 }
 .Grimm4{
     color: #65C8D0;
     font-family: "Satisfy";
-    float:right;
-    position: relative;
+    
+    position: static;
 }
 
 .Education{
@@ -73,6 +72,9 @@ html{
   
    
 
+}
+.bottom{
+    margin-top: 22rem;
 }
 
 .skills{
@@ -177,14 +179,15 @@ header{
   }
 
 .logo{
-    font-size: 45px;
+    font-size: 40px;
     font-family: "Satisfy", sans-serif;
     order: 3;
     margin-left: auto;
 }
 
 nav{
-    order:1;
+    order:2;
+    
 }
 .navbar{
     list-style: none;
@@ -212,7 +215,8 @@ nav{
 }
 
 .cta{
-    order: 2;
+    order: 0;
+    margin-right: auto;
 }
 
 button{
@@ -395,7 +399,7 @@ button:hover{
   }
   
   .footer-distributed form button{
-      border-radius: 20px;
+      border-radius: 16px;
       background-color:  #65C8D0;
       color: #ffffff;
       box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.5);

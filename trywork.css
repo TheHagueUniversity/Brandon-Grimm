@@ -187,7 +187,7 @@ button:hover{
 	position: relative;
 	border: 5px solid #65C8D0;
     height: 450px;
-    border-radius: 10px;
+    border-radius: 0;
     box-shadow: black;
 }
 .grid-element img{
@@ -521,8 +521,8 @@ section {
 }
 
 .footer-distributed form button{
-	border-radius: 20px;
-	background-color:  #33383b;
+	border-radius: 16px;
+	background-color:  #65C8D0;
 	color: #ffffff;
 	border: 0;
 	padding: 15px 50px;
