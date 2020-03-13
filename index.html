@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <title>Brandon Grimm</title>
+</head>
+<body>
+    <!--Navigation & surname-->
+    <div  class="logo">
+        <a href="index.html">
+           <img  src="Image/GRIMM.svg" alt="Surname logo">
+         </a>
+       </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">HOME</a></li>  
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Project.html">PROJECTS</a></li>
+            </ul>
+        </nav>
+       </div>
+    <!--Name and Bitmoji-->
+    <section>
+        <div class="emoji"><img src="Image/Bit moji.svg" width="250px"></div>
+        <div class="introduction">
+        <h1>HEY!</h1>
+        <h2><span class="grey">My name is </span>Brandon Grimm</h2>
+        <h2><span class="grey">Yes like the </span>Brother Grimm</h2>
+</div>
+</section>
+
+<section>
+    <div class="wire"><img src="Image/Junior Background.svg" width="100%"></div>
+    <div class="ux-junior">
+        <h2><span class="grey">I am a </span>UX Design Student</h2>
+        <h2><span class="grey">fascinated by</span></h2>
+        <h2>Interaction Design & UX Research</h2>
+        </div>
+</section>
+
+<main>
+    <section>
+      
+        <div class="container">
+          <h2 class="title-1">Projects</h2>
+            <div class="portfolio-item n1">
+              <div class="portfolio-img">
+                <a href="Project2.html" img src="Image/project/Resize/birme (2)/complete.jpg">
+                   <img src="Image/project/Resize/birme (2)/day4.png">
+                     <img src="Image/project/Resize/birme (2)/IMG_2679.JPG">
+                      
+                      
+                    
+              </div>
+              <div class="portfolio-title"> 
+                  <a href="Project2.html">Hallmark</div></a>
+            </div>
+            <div class="portfolio-item n2">
+                <div class="portfolio-img">
+                  <a href="Project4.html" img src="Image/project/Resize/birme (2)/ezgif.com-crop (1).gif" autoplay loop muted></img>
+                    <img src="Image/project/Resize/birme (2)/curve-004.png"/>
+                  
+                </div>
+                <div class="portfolio-title">
+                    <a href=Project4.html>F1 2014</div></a> 
+                </div>
+                </div>
+    </section>
+  </main>
+  <!--Goals section-->
+      <section class="Goals">
+        <h2 class="title">Goals</h2>
+        <div class="row">
+            <div class="column">
+                <h3>Short Term</h3>
+                <h3 class="small">Delve deeper into Java & Java script</h3>
+                <h3 class="small">Read more about Design & Business world </h3>
+                <h3 class="small">Visit a TED Talk</h3>
+                </div>
+                <div class="column1">
+                    <h3>Long term</h3>
+                    <h3 class="small">Build a personal Brand</p>
+                    <h3 class="small">Host my own teams Workshops</h3>
+                    <h3 class="small">Be part of project that strives to simplify life</p>
+                    </div>
+                </section>
+
+                <form action="about.html" method="link">
+
+           
+                  <button class="btn link">More about me</button>
+              
+                  </form>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3><span class="Grimm"> <img src="Image/GRIMM.svg"></h3>
+
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                ·
+                <a href="about.html">About</a>
+                ·
+                <a href="Project.html">Projects</a>
+                ·
+                <a href="Image/Brandon Grimm Resume.pdf" download="Brandon Resume"> Resume</a>
+            </p>
+
+            <p class="footer-company-name">Made by Brandon Grimm</p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/profile.php?id=100000158137723"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/brandongr00/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/brandon-grimm-bb9778161/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/Brandongri15"><i class="fa fa-github"></i></a>
+               
+
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            
+                          <!-- go to main email client and send email-->
+            <a href="mailto:brandon1506@gmail.com" target="_blank">
+
+               
+                <button class="btn link-1">Email Me</button>
+
+                
+            </form>
+
+        </div>
+
+    </footer>
+    <script>
+      // image gallery hover effect//
+    let interval = null
+    function startRotating(containerEl) { //rotate image
+      const items = containerEl.querySelectorAll('.portfolio-img img, .portfolio-img video')
+      if (items.length === 1) {
+        return false
+      }
+      
+      let currentIndex = items.length - 1
+      interval = setInterval(function() {
+        const nextIndex = currentIndex-1 < 0 ? items.length - 1 : currentIndex - 1
+        items[nextIndex].style.opacity = "1"
+        items[currentIndex].style.opacity = "0"
+        currentIndex -= 1
+        if (currentIndex < 0) {
+          currentIndex = items.length - 1
+        }
+      }, 750)
+    }
+    
+    function stopRotating() {
+      clearInterval(interval)
+    }
+    
+    //edits the box shadow when hovering to create box effect
+    document.querySelectorAll('.portfolio-item').forEach(function(el) {
+      el.addEventListener('mouseover', function() {
+        el.querySelector('.portfolio-img').style.boxShadow = '0 3px 15px #171515'
+        startRotating(el)
+      })
+      el.addEventListener('mouseout', function() {
+        el.querySelector('.portfolio-img').style.boxShadow = '0 5px 10px #171515'
+        stopRotating()
+      })
+    })
+</script>
+</body>
+</html>

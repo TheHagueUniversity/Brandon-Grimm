@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Prompt:400,700&display=swap');
+
+/*https://coolors.co/171515-ff7315-a5a3a3-f4f4f4-65c8d0
+    Licorice: 171515 blackish
+    Pumpkin : #ff7315 orange
+    QuickSil: #a5a3a3 Silver
+    White   : #f4f4f4 White
+    */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #171515;
+}
+
+
+
+
+
+
+
+/*------Projects--------*/
+.grid{
+	margin-top: 50px;
+	margin-bottom:100px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-auto-flow: row dense;
+}
+.grid-element{
+	display: flex;
+	justify-content: center;
+  align-items: center;
+	object-fit: cover;
+	overflow: hidden;
+	position: relative;
+	border: 5px solid #ff7315;
+    height: 450px;
+    border-radius: 0;
+    box-shadow: black;
+}
+.grid-element img{
+	flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+	width: 100%;
+	opacity: 1;
+	object-fit: cover;
+}
+.grid-hover:hover img{
+	opacity: 0.5;
+	transition: 0.2s ease;
+	transform: scale(1.2);
+}
+
+.grid-hover .center-text {
+  opacity: 0%;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
+  color: #ff7315;
+  font-size: 30px;
+  padding: 16px 32px;
+  font-family: "Prompt";
+}
+
+
+.grid-hover:hover .center-text {
+  opacity: 1;
+}
+
+/* Navbar */
+
+.content{
+    padding: 16px;
+}
+
+li,a,button{
+    font-family:"prompt";
+    font-weight: 500;
+    font-size: 20px;
+    color: #f4f4f4;
+    text-decoration: none;
+    
+}
+
+ul{
+    display: flex;
+    /* push text to far edges*/
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px;
+    color: #a5a3a3;
+    
+}
+
+
+.logo{
+    vertical-align: middle;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    width: 150px;
+ 
+ }
+ 
+ nav{
+     order:3;
+     margin-right: auto;
+     overflow: auto;
+     color: #f4f4f4;
+ }
+ .navbar{
+     list-style: none;
+     color: #f4f4f4;
+     z-index: 500;
+     background-color: #171515;
+ }
+ 
+ .navbar li a:active {
+     color:#ff7315;
+   }
+ 
+ .navbar li{
+     display: inline-block;
+     padding: 0px  20px;
+ }
+ 
+ .navbar li:nth-child(1){
+     display: inline-block;
+     padding: 0px  20px 0 0;
+ }
+ 
+ .navbar li a{
+     transition: all 0.3 ease 0s;
+ }
+ .navbar li a:hover{
+     color:#ff7315;
+ }
+ .navbar a.active{
+     color: #f4f4f4; 
+ }
+ .cta{
+     order: 2;
+     
+ }
+ 
+ @media only screen and (max-width: 700px){
+    .navbar {
+        list-style: none;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        padding: 20px;
+        margin-top: 10px;
+        align-items: center;
+        color: #f4f4f4;
+        background-color: #ff7315;
+      }
+      .navbar li{
+        display: inline-block;
+        padding: 0px  20px;
+        color: #f4f4f4;
+    }
+    .navbar li:nth-child(1){
+        display: inline-block;
+        padding: 0px  20px 0 0;
+    }
+    
+    .navbar li a{
+        transition: all 0.3 ease 0s;
+    }
+    .navbar li a:hover{
+        color: #171515;
+    }
+    li,a,button{
+        font-family:"Prompt";
+        font-weight: 500;
+        font-size: 20px;
+        color: #f4f4f4;
+        text-decoration: none;
+        font-size: 24px;
+        
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .navbar {
+        list-style: none;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        padding: 20px;
+        align-items: center;
+        background-color:#ff7315;
+        overflow: hidden;
+        z-index: 500;
+      }
+      .navbar li{
+        display: inline-block;
+        padding: 0px  10px;
+    }
+    li,a,button{
+        font-family:monospace;
+        font-weight: 500;
+        font-size: 20px;
+        color: #f4f4f4;
+        text-decoration: none; 
+    }
+    .navbar li:nth-child(1){
+        display: inline-block;
+        padding: 0px  0px 0px 0px;
+    }
+    .navbar li a{
+        transition: all 0.3 ease 0s;
+    }
+    .navbar li a:hover{
+        color: #171515;
+    }
+    li,a,button{
+        font-family:monospace;
+        font-weight: 500;
+        font-size: 16px;
+        color: #f4f4f4;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 5px;
+    }
+
+}
+.footer-distributed{
+    background: black;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: left;
+    padding: 50px 60px 40px;
+    overflow: hidden;
+}
+/* Footer left */
+
+.footer-distributed .footer-left{
+    float: left;
+    background-color: black;
+}
+
+/* My Surname */
+
+.footer-distributed h3{
+    color:  #ffffff;
+    font: normal 45px 'Satisfy', cursive;
+    margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+    color:  rgb(101, 200, 208);
+    font-family:"Satisfy" ;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+    margin-top: 40px;
+}
+
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  black;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+    float: right;
+    background-color: black;
+}
+
+.footer-distributed .footer-right p{
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 42px 0 0;
+    color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+    display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color:  #000000;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color:  #d1d2d2;
+
+    width: 400px;
+    padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+    color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+    color:  #5c666b;
+    opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+    color:  #5c666b;
+}
+
+.footer-distributed form input{
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+    border-radius: 8px;
+    background-color:  #ff7315;
+    color: #ffffff;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.5);
+    border: 0;
+    padding: 8px 8px;
+    font-weight: bold;
+    float: right;
+}
+
+/* Responsive footer */
+
+@media (max-width: 1000px) {
+
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-company-name{
+        font-size: 12px;
+    }
+
+    .footer-distributed form input,
+    .footer-distributed form textarea{
+        width: 250px;
+    }
+
+    .footer-distributed form button{
+        padding: 10px 35px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .footer-distributed{
+        padding: 30px;
+        margin-bottom: 80px;
+        width: 100%;
+        background-color: black;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right{
+        float: none;
+        max-width: auto;
+        margin: 0 auto;
+    }
+
+    .footer-distributed .footer-left{
+        margin-bottom: 40px;
+    }
+
+    .footer-distributed form{
+        margin-top: 30px;
+    }
+
+    .footer-distributed form{
+        display: block;
+    }
+
+    .footer-distributed form button{
+        float: none;
+    }
+}
